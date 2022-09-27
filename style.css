@@ -134,7 +134,8 @@ footer{
     background-color: rgb(245,246,248);
     margin-top: 170px;
     color: var(--darkgrayishblue);
-    
+    padding-top: 60px;
+    height: 150px;
 }
 .footerContainer{
     display: flex;
@@ -142,17 +143,36 @@ footer{
 }
 .footerWrapper{
     display: flex;
-    justify-content: space-evenly;
-    border-style: solid;
-    /* width: 40%; */
+    justify-content: space-between;
+    margin-right: 250px;
+}
+.footerLogo{
+    margin-right: 30px;
+
 }
 footer ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 60px;
+    grid-column-gap: 80px;
+    grid-row-gap: 15px;
     list-style: none;
+    padding-left: 150px;
 }
 .footerIcons{
-    border-style: solid;
+    margin-top: 30px;
+
+}
+.footerIcons{
+    margin-left: 15px;
+    display: flex;
+    gap: 30%;
+
+}
+svg{
+    fill: #4C545C;
+}
+svg:hover{
+    fill: var(--cyan);
+    transition: 500ms;
 }
