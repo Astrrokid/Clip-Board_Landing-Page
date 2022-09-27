@@ -1,0 +1,158 @@
+:root{
+    --cyan:hsl(171, 66%, 44%);
+    --lightblue: hsl(233, 100%, 69%);
+    --darkgrayishblue: hsl(210, 10%, 33%);
+    --grayishblue: hsl(201, 11%, 66%);
+}
+
+body{
+    margin: 0;
+    font-family: "Bai Jamjuree";
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grayishblue);
+}
+h2, h3, h4{
+    color: var(--darkgrayishblue);
+    font-weight: 600;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+h4{
+    font-size: 1.65rem;
+    margin-bottom: 0;
+}
+p{
+    line-height: 35px;
+}
+
+
+/* header */
+header{
+    text-align: center;
+}
+
+.imgWrapper{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0)), url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:350px;
+    padding-top: 100px;
+}
+
+
+/* button */
+button{
+    width: 190px;
+    height: 45px;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    margin-top: 20px;
+}
+.green{
+    background-color: var(--cyan);
+
+
+}
+
+.blue{
+    background-color: var(--lightblue);
+    margin-left: 10px;
+}
+
+
+/* heroOne */
+.heroOne{
+    margin-top: 170px;
+}
+
+.head{
+    text-align: center;
+}
+.comp{
+    margin-top: 100px;
+    display: flex;
+    gap:7%;
+}
+.img{
+    margin-left: -50px;
+}
+.aside{
+    padding-top: 30px;
+}
+
+/* heroTwo */
+.heroTwo{
+    margin-top: 170px;
+}
+.heroTwo img{
+    margin-top: 100px;
+}
+
+/* heroThree */
+.heroThree{
+    margin-top: 90px;
+}
+.supercharge{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 80px;
+}
+.sc{
+    text-align: center;
+    
+}
+
+
+/* heroFour */
+.heroFour{
+    margin-top: 170px;
+}
+.compLogos{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+/* heroFive */
+.heroFive{
+    margin-top: 170px;
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(245,246,248);
+    margin-top: 170px;
+    color: var(--darkgrayishblue);
+    
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    /* width: 40%; */
+}
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    list-style: none;
+}
+.footerIcons{
+    border-style: solid;
+}
