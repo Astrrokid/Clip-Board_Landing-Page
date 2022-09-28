@@ -309,4 +309,47 @@ svg:hover{
         margin-top: 20px;
         font-size: 1.2rem;
     }
+    .heroOne{
+        margin-top: 300px;
+    }
+    .comp{
+        margin-top: 60px;
+    }
+    .feature{
+        margin-bottom: 70px;
+    }
+    .head img{
+        margin-top: 50px;
+    }
+    .supercharge{
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    .sc{
+        margin-bottom: 50px;
+    }
+    .heroFour{
+        margin-top: 70px;
+    }
+    .compLogos{
+        
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+    .compLogos img{
+        width: 70%;
+    }
+    .footerWrapper, .footerContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerLogo img{
+        width: 40px;
+    }
+    .footerIcons{
+        margin: 30px auto;
+        gap: 20px;
+    }
 }
