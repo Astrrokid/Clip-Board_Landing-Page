@@ -32,6 +32,13 @@ h4{
 p{
     line-height: 35px;
 }
+a{
+    text-decoration: none;
+    color: var(--darkgrayishblue);
+}
+a:hover{
+    color: var(--cyan);
+}
 
 
 /* header */
@@ -273,6 +280,9 @@ svg:hover{
     #e{
         grid-row: 5;
     }
+    .footerIcons{
+        margin-left: -70px;
+    }
 }
 @media screen and (max-width:375px){
     h2, h3, h4{
@@ -351,5 +361,12 @@ svg:hover{
     .footerIcons{
         margin: 30px auto;
         gap: 20px;
+        width: 150px;
+        justify-content: space-evenly;
+        padding-right: 0;
+    }
+    .icon{
+        margin: 0;
+        
     }
 }
