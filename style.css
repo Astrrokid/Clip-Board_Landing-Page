@@ -1,8 +1,11 @@
 :root{
     --cyan:hsl(171, 66%, 44%);
+    --lightcyan:hsl(172, 32%, 69%);
     --lightblue: hsl(233, 100%, 69%);
+    --verylightblue: hsl(233, 94%, 87%);
     --darkgrayishblue: hsl(210, 10%, 33%);
     --grayishblue: hsl(201, 11%, 66%);
+
 }
 
 body{
@@ -69,15 +72,20 @@ button{
 }
 .green{
     background-color: var(--cyan);
-
+}
+.green:hover{
+    background-color: var(--lightcyan);
+    transition: 500ms;
 
 }
-
 .blue{
     background-color: var(--lightblue);
     margin-left: 10px;
 }
-
+.blue:hover{
+    background-color: var(--verylightblue);
+    transition: 500ms;   
+}
 
 /* heroOne */
 .heroOne{
