@@ -11,6 +11,7 @@ body{
     font-size: 18px;
     font-weight: 400;
     color: var(--grayishblue);
+    overflow-x: hidden;
 }
 h2, h3, h4{
     color: var(--darkgrayishblue);
@@ -42,6 +43,7 @@ header{
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.884), rgba(255, 255, 255, 0)), url(./images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height:350px;
     padding-top: 100px;
 }
@@ -55,6 +57,8 @@ button{
     border-style: none;
     color: white;
     margin-top: 20px;
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
 }
 .green{
     background-color: var(--cyan);
@@ -139,12 +143,12 @@ footer{
 }
 .footerContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .footerWrapper{
     display: flex;
     justify-content: space-between;
-    margin-right: 250px;
+    margin-left: -70px;
 }
 .footerLogo{
     margin-right: 30px;
@@ -161,13 +165,11 @@ footer ul{
 }
 .footerIcons{
     margin-top: 30px;
-
-}
-.footerIcons{
     margin-left: 15px;
     display: flex;
     gap: 30%;
-
+    width: 10%;
+    padding-right: 20px;
 }
 svg{
     fill: #4C545C;
@@ -175,4 +177,136 @@ svg{
 svg:hover{
     fill: var(--cyan);
     transition: 500ms;
+}
+
+
+@media screen and (max-width:992px){
+    .img{
+        width: 65%;
+    }
+    .compLogos img{
+        width: 100%;
+    }
+    .img img{
+        width: 100%;
+    }
+    .aside{
+        width:30%;
+        line-height: 0px;
+    }
+    .head img{
+        width: 100%;
+    }
+    .footerWrapper{
+        margin-left: 0;
+    }
+    footer ul{
+        grid-column-gap: 20px;
+        padding-left: 0;
+    }
+    
+
+}
+@media screen and (max-width:768px){
+    .img{
+        width: 65%;
+    }
+    .compLogos img{
+        width: 100%;
+    }
+    .img img{
+        width: 100%;
+    }
+    .aside{
+        width:30%;
+        line-height: 0px;
+    }
+    .head img{
+        width: 100%;
+    }
+    .footerWrapper{
+        margin-left: 0;
+    }
+    .footerLogo{
+        margin-right: 0px;
+    
+    }
+    footer ul{
+        padding-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (max-width:576px){
+    .comp{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .img, .aside{
+        width: 90%;
+        margin-left: 0;
+    }
+    .compLogos{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    footer{
+        height: auto;
+    }
+    .footerWrapper ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #a{
+        grid-row: 1;
+    }
+    #b{
+        grid-row: 4;
+    }
+    #c{
+        grid-row: 3;
+    }
+    #d{
+        grid-row: 2;
+    }
+    #e{
+        grid-row: 5;
+    }
+}
+@media screen and (max-width:375px){
+    h2, h3, h4{
+        color: var(--darkgrayishblue);
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    h4{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    
+    main, .imgWrapper{
+        padding-left:5px;
+        padding-right: 5px;
+    }
+    button{
+        width: 300px;
+        height: 60px;
+        border-radius: 50px;
+        border-style: none;
+        color: white;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
 }
